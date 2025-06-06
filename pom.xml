@@ -81,6 +81,20 @@
           <version>3.12.1</version>
         </plugin>
         <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>3.3.0</version>
+      <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <mainClass>com.example.hello.App</mainClass>
+            <classpathPrefix>lib/</classpathPrefix>
+          </manifest>
+        </archive>
+      </configuration>
+    </plugin>
+        <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.6.1</version>
         </plugin>
